@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meetup</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des derniers meeting par thème</h1>
+        <ul>
+            <?php foreach ($communities as $community) : ?>
+                <li>
+                    Meetings sur le thème <strong><?= $community->getName(); ?></strong>
+                    <ul>
+                        <?php foreach ($meetings as $meeting) : ?>
+                            <?php if($community->getId() == $meeting->getCommunityId()) : ?>
+                            <li><?= $meeting->getTitle(); ?><?= $meeting->getCommunityId(); ?></li>
+                            <? endif; ?>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+</body>
+</html>

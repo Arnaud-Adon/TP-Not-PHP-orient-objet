@@ -1,0 +1,19 @@
+{
+    "name": "ArnaudAdon/tp-poo",
+    "authors": [
+        {
+            "name": "Arnaud Adon",
+            "email": "assy.adon@yahoo.fr"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^4.0",
+        "zendframework/zend-servicemanager": "^3.3",
+        "symfony/dotenv": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/"
+        }
+    }
+}
