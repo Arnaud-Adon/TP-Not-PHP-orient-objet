@@ -14,7 +14,7 @@
                     <ul>
                         <?php foreach ($meetings as $meeting) : ?>
                             <?php if($community->getId() == $meeting->getCommunityId()) : ?>
-                            <li><?= $meeting->getTitle(); ?><?= $meeting->getCommunityId(); ?></li>
+                            <li><?= $meeting->getTitle(); ?></li>
                             <? endif; ?>
                         <?php endforeach; ?>
                     </ul>
